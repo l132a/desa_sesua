@@ -259,13 +259,12 @@
 
 @push('stylesheet')
     <link rel="stylesheet" href="{{ asset('modules/daterangepicker.css') }}">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css"
-        rel="stylesheet" />
+    <link href="{{ asset('css/datepicker.css') }}" rel="stylesheet" />
 @endpush
 
 @push('javascript')
     <script src="{{ asset('modules/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <script src="{{ asset('js/datepicker.js') }}"></script>
     <script src="{{ asset('modules/daterangepicker.js') }}"></script>
     <script>
         $(document).ready(function() {
