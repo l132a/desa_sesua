@@ -1073,10 +1073,7 @@
                     <tr>
                         <td colspan="2">
                             <div style="font-size: 18px;" class="row mt-5">
-                                <div class="col-8">
-
-                                </div>
-                                <div class="col-4 text-right">
+                                <div class="col-12 text-center">
                                     <b>Peta Lokasi Tanah</b> <br>
                                     <p>{{ $param->sapaan ?? '' }} :
                                         {{ $param->nama ?? '' }}</p>
