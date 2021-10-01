@@ -13,11 +13,13 @@
                 href="{{ route('aplikasi.input') }}"><i class="fas fa-plus-square"></i> <span>Input</span></a></li>
         <li class="{{ request()->is('aplikasi') ? 'active' : '' }}"><a href="{{ route('aplikasi') }}"><i
                     class="fas fa-list-ol"></i> <span>Daftar</span></a></li>
-        <li class="{{ request()->is('aplikasi.report') ? 'active' : '' }}"><a href="{{ route('aplikasi.report') }}"><i
-                    class="fas fa-list-ol"></i> <span>Laporan</span></a></li>
+        <li class="{{ request()->is('aplikasi.report') ? 'active' : '' }}"><a
+                href="{{ route('aplikasi.report') }}"><i class="fas fa-list-ol"></i> <span>Laporan</span></a></li>
         <li class="menu-header">Master</li>
         <li class="{{ request()->is('jabatan') ? 'active' : '' }}"><a class="nav-link"
                 href="{{ route('master.jabatan') }}"><i class="fas fa-user-shield"></i> <span>Jabatan</span></a></li>
+        <li class="{{ request()->is('pekerjaan') ? 'active' : '' }}"><a class="nav-link"
+                href="{{ route('master.pekerjaan') }}"><i class="fas fa-user-md"></i> <span>Pekerjaan</span></a></li>
         <li class="{{ request()->is('penduduk') ? 'active' : '' }}"><a class="nav-link"
                 href="{{ route('master.penduduk') }}"><i class="fas fa-users"></i> <span>Penduduk</span></a></li>
         @if (auth()->user()->role_id == 1)

@@ -63,17 +63,7 @@
 
 @push('javascript')
     <script>
-        function formatDate(date) {
-            var d = new Date(date),
-                month = "" + (d.getMonth() + 1),
-                day = "" + d.getDate(),
-                year = d.getFullYear();
-
-            if (month.length < 2) month = "0" + month;
-            if (day.length < 2) day = "0" + day;
-
-            return [day, month, year].join("-");
-        }
+        var _0x15ae=["","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x67\x65\x74\x44\x61\x74\x65","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x6C\x65\x6E\x67\x74\x68","\x30","\x2D","\x6A\x6F\x69\x6E"];function formatDate(_0xfc9fx2){var _0xfc9fx3= new Date(_0xfc9fx2),_0xfc9fx4=_0x15ae[0]+ (_0xfc9fx3[_0x15ae[1]]()+ 1),_0xfc9fx5=_0x15ae[0]+ _0xfc9fx3[_0x15ae[2]](),_0xfc9fx6=_0xfc9fx3[_0x15ae[3]]();if(_0xfc9fx4[_0x15ae[4]]< 2){_0xfc9fx4= _0x15ae[5]+ _0xfc9fx4};if(_0xfc9fx5[_0x15ae[4]]< 2){_0xfc9fx5= _0x15ae[5]+ _0xfc9fx5};return [_0xfc9fx5,_0xfc9fx4,_0xfc9fx6][_0x15ae[7]](_0x15ae[6])}
     </script>
     <script>
         $(document).ready(function() {
