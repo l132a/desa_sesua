@@ -75,7 +75,7 @@
             <table class="table table-borderless">
                 <tbody>
                     <tr>
-                        <td class="text-center align-middle logo" width="100%">
+                        <td class="text-center align-middle logo font-weight-bold" width="100%" style="font-size: 14pt; ">
                             {!! $header_ba !!}
                         </td>
                     </tr>
@@ -309,7 +309,7 @@
             <table class="table table-borderless">
                 <tbody>
                     <tr>
-                        <td class="text-center align-middle logo" style="font-size: 12pt; ">
+                        <td class="text-center align-middle font-weight-bold" style="font-size: 14pt; ">
                             {!! $header_sk !!}}
                         </td>
                     </tr>
@@ -1102,9 +1102,9 @@
                             </div>
                             <div class="col-6 text-center align-bottom">
                                 {{ ucwords(strtolower($param->desa)) ?? '' }},
-                                {{ date('d', strtotime($param->created_at)) ?? '' }}
-                                {{ ucwords(strtolower(\App\Http\Controllers\HelperController::bulan($param->created_at))) ?? '' }}
-                                {{ date('Y', strtotime($param->created_at)) ?? '' }}
+                                {{ date('d', strtotime($param->tanggal_berita_acara)) ?? '' }}
+                                {{ ucwords(strtolower(\App\Http\Controllers\HelperController::bulan($param->tanggal_berita_acara))) ?? '' }}
+                                {{ date('Y', strtotime($param->tanggal_berita_acara)) ?? '' }}
                             </div>
                         </div>
                     </td>
