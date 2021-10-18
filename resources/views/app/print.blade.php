@@ -29,23 +29,22 @@
             background-size: 70%;
         }
 
-        body {
-            background-color: white;
-        }
+    }
+    body {
+        background-color: white;
+    }
 
-        .table-bordered,
-        .table-bordered td,
-        .table-bordered th {
-            border: 1px solid #dee2e6;
-            background-color: transparent !important;
-        }
+    .table-bordered,
+    .table-bordered td,
+    .table-bordered th {
+        border: 1px solid #dee2e6;
+        background-color: transparent !important;
+    }
 
-        .table-borderless,
-        .table-borderless td,
-        .table-borderless th {
-            background-color: transparent !important;
-        }
-
+    .table-borderless,
+    .table-borderless td,
+    .table-borderless th {
+        background-color: transparent !important;
     }
 
     .logo {
@@ -75,7 +74,8 @@
             <table class="table table-borderless">
                 <tbody>
                     <tr>
-                        <td class="text-center align-middle logo font-weight-bold" width="100%" style="font-size: 14pt; ">
+                        <td class="text-center align-middle logo font-weight-bold" width="100%"
+                            style="font-size: 14pt; ">
                             {!! $header_ba !!}
                         </td>
                     </tr>
